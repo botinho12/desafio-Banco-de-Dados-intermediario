@@ -1,0 +1,23 @@
+--DESAFIO 2 EXCLUINDO OS PRODUTOS QUE SAO DA CATEGORIA CLOTHING
+select * from [production.product]; 
+
+INSERT INTO [production.product]
+VALUES(7,'MESA',300,1000,'CLOTHING')
+
+DELETE FROM [production.product]
+WHERE CATEGORIA = 'CLOTHING';
+-------------------------------------
+--MOSTRANDO OS PRODUTOS DA CATEGORIA CLOTHING (ADICIONEI POUCOS ENTAO SO TEM 1 MESMO)
+SELECT PRODUTO
+FROM [production.productCategory]
+WHERE CATEGORIA = 'CLOTHING';
+
+
+
+
+
+
+
+
+
+
